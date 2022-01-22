@@ -4,13 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment Form </title>
+    <title>Patient_Appointment_Form</title>
+    <style>
+        input,textarea{
+            padding: 09px;
+            background-color: silver;
+            border-color: springgreen;
+        }
+        select{
+            padding: 09px;
+            width: 88%;
+            background-color: silver;
+            border-color: springgreen;
+
+        }
+        input[type=number]{
+            padding: 09px;
+            width: 42%;
+            background-color: silver;
+            border-color: tomato;
+        }
+        button{
+            background:blue;
+            padding: 12px;
+            color: silver;
+            width: 200px;
+        }
+        p{
+            font-size:40px;
+            color: darkblue;
+            height: 10px;
+        }
+        strong{
+            color: darkred;
+            font-size: 25px;
+        }
+        table{
+            background-color: lightslategrey;
+        }
+        h3{
+            color: salmon;
+            font-size: 50px;
+            height: 20px;
+            vertical-align: top;
+        }
+    </style>
 </head>
 <body>
-    <form>
-        <center><h4>Patients Appointment Form</h4></center>
-        <table width=>
+    <form method="post">
+        <table width="800" align="center" cellspacing="0px" cellpadding="7px">
+            <tr>
+                <td>
+                    <center><h3>Crampete Hospital</h3> </center>
+                    <p>Patient Appointment Form :-</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <label><strong> Name :</strong></label><br>
+                    <input type="text" name="FirstName" placeholder="First Name"  size="42" required>  
+                    <input type="text" name=LastName" placeholder="last Name" size="42" required>        
+                </td>
+            </tr>
+        </table>
+        <table width="800" align="center" cellspacing="5px" cellpadding="10px">
+            <tr>
+                <td>
+                    <label><strong>Father/Gaurdian Name :</strong></label><br>
+                    <input type="text" name="F/G_Name"  size="90" required> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Phone Number :</strong></label><br>
+                    <input type="tel" name="MblNum" placeholder="10 digit mobile num" size="90" required>
+                </td>
+            </tr>
+           
+            <tr>    
+                <td>
+                    <label><strong>E-Mail :</strong></label><br>
+                    <input type="email" name="Email" placeholder="Ex/--abc@gmail.com" size="90" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong> Type OfHealth Issue :</strong></label><br>
+                    <select name="TypeOfIssue">
+                        <option value="Select">Select</option>
+                        <option value="HA">Heart Attack</option>
+                        <option value="lf">Lungs Failure</option>
+                        <option value="KF">Kidney Failure</option>
+                        <option value="FRC">Fractures</option>
+                        <option value="Db">Diabitecs</option>
+                        <option value="BP">Blood Pressure</option>
 
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Current Condition Of Patient :</strong></label><br>
+                    <textarea placeholder="--Minimum 500 charecter--" cols="93" rows="04"></textarea>
+                </td>
+            </tr>    
+                
+            <tr>
+                <td>
+                   <center> <button type="submit">SUNMIT</button></center>
+                </td>
+            </tr>
         </table>
     </form>
     
