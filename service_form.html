@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service_form</title>
+    <style>
+        input,textarea{
+            padding: 09px;
+            background-color: silver;
+            border-color: tomato;
+        }
+        input[type=currency]{
+            padding: 09px;
+            width: 86%;
+            background-color: silver;
+            border-color: tomato;
+
+        }
+        input[type=number]{
+            padding: 09px;
+            width: 42%;
+            background-color: silver;
+            border-color: tomato;
+        }
+        input[type=month]{
+            padding: 07px;
+            width: 42%;
+            background-color: silver;
+            border-color: tomato;
+        }
+        button{
+            background:blue;
+            padding: 12px;
+            color: silver;
+            width: 100px;
+        }
+        p{
+            font-size:40px;
+            color: blue;
+            height: 10px;
+        }
+        strong{
+            color: darkorange;
+            font-size: 25px;
+        }
+        table{
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <table width="800" align="center" cellspacing="0px" cellpadding="7px">
+            <tr>
+                <td>
+                    <p>Service Form :-</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <label><strong> Name :</strong></label><br>
+                    <input type="text" name="FirstName" placeholder="First Name"  size="42" required>  
+                    <input type="text" name=LastName" placeholder="last Name" size="42" required>        
+                </td>
+            </tr>
+        </table>
+        <table width="800" align="center" cellspacing="5px" cellpadding="10px">
+            <tr>
+                <td>
+                    <label><strong>Phone Number :</strong></label><br>
+                    <input type="tel" name="MblNum" placeholder="10 digit mobile num" size="90" required>
+                </td>
+            </tr>
+            <tr>    
+                <td>
+                    <label><strong>E-Mail :</strong></label><br>
+                    <input type="email" name="Email" placeholder="Ex/--abc@gmail.com" size="90" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Laptop Model :</strong></label><br>
+                    <input type="radio" name="model" value="Apple" required>Apple <br>
+                    <input type="radio" name="model" value="hp" required>HP<br>
+                    <input type="radio" name="model" value="acer" required>Acer<br>
+                    <input type="radio" name="model" value="govt" required>Goverment Laptop<br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Damaged parts :</strong></label><br>
+                        <input type="checkbox" name="damageparts" value="mb">Motherboard<br>
+                        <input type="checkbox" name="damageparts" value="dp">Display<br>
+                        <input type="checkbox" name="damageparts" value="mp">MousePad<br>
+                        <input type="checkbox" name="damageparts" value="Kb">keyboard<br>
+                        <input type="checkbox" name="damageparts" value="Sp">Speaker<br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <center> <button type="submit">send</button></center>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

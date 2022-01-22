@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Leave Apply Form</title>
+    <style>
+        input,textarea{
+            padding: 07px;
+            background-color: silver;
+            border-color: tomato;
+        }
+        input[type=date]{
+            width: 85%;
+            background-color: silver;
+            border-color: tomato;
+        }
+        button{
+            background:blue;
+            padding: 12px;
+            color: silver;
+            width: 100px;
+        }
+        p{
+            font-size:50px;
+            color: blue;
+            height: 10px;
+        }
+        strong{
+            color: darkorange;
+            font-size: 25px;
+        }
+        table{
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table width="800" align="center" cellspacing="0px" cellpadding="7px">
+            <tr>
+                <td>
+                    <p>Students Leave Request Form</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <label><strong>Student Name :</strong></label><br>
+                    <input type="text" name="studentFirstName" placeholder="First Name"  size="42" required>  
+                    <input type="text" name="studentLastName" placeholder="last Name" size="42" required>        
+                </td>
+            </tr>
+        </table>
+        <table width="800" align="center" cellspacing="5px" cellpadding="10px">
+            <tr>
+                <td>
+                    <label><strong>Phone Number :</strong></label><br>
+                    <input type="text" name="studentMblNum" placeholder="10 digit mobile num" size="90" required>
+                </td>
+            </tr>
+            <tr>    
+                <td>
+                    <label><strong>E-Mail :</strong></label><br>
+                    <input type="email" name="StudentEmail" placeholder="Ex/--abc@gmail.com" size="90" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Reason For Leave :</strong></label><br>
+                    <input type="radio" name="ReasonofLeave" value="NL" required>Normal Leave<br>
+                    <input type="radio" name="ReasonofLeave" value="SL" required>Sick Leave<br>
+                    <input type="radio" name="ReasonofLeave" value="FL" required>Festival Leave<br>
+                    <input type="radio" name="ReasonofLeave" value="OR" required>Overseas Reason<br>
+                    <input type="radio" name="ReasonofLeave" value="others" required>other<br>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <label><strong>Date Of Leave :</strong></label><br>
+                    <input type="date" name="DateofAnsence" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Module :</strong></label><br>
+                    <textarea cols="93" rows="04"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <center> <button type="submit">Send</button></center>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

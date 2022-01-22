@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback form</title>
+    <style>
+        body{
+            background-color: slategray;
+            border-inline: 2px solidgreen;
+        }
+        input,textarea{
+            background-color: tan;
+        }
+        button{
+            padding: 12px;
+            background-color: darkorange;
+            color: darkred;
+        }
+        hr{
+            color: firebrick;
+            padding: 2px;
+            background-color: firebrick;
+        }
+    </style>
+</head>
+<body>
+    <form action="/action_page.php" novalidate>
+        <center ><h2> website Feedback form</h2></center>
+        <hr>
+        <table  width="100%" align="center" border="0" cellspacing="0" cellpadding="12px" >
+            <th align="left">please fill the feedback for our website viewers :</th>
+            <tr>
+                <td width="50%">
+                    <label>Name :</label><br>
+                    <input type="text" name="username" placeholder="Enter name" size="30px" required >
+                </td>
+                <td>
+                    <label>E-mail :</label><br>
+                    <input type="email" name="email" placeholder="enter email" size="30px" required>
+                </td>
+            </tr>
+            </table>
+            <hr>
+            
+        <table  width="100%" align="center" border="0" cellspacing="0" cellpadding="12px" >
+            <tr>
+                <td width="50%">
+                    <lable align="left">Is This Your First Visit To The Website :</lable><br>
+                    <input type="radio" name="new viewer" value="yes">Yes <br>
+                    <input type="radio" name="new viewer" value="no">No <br>
+                    <textarea placeholder="Primary reason to visit our website" rows="03" cols="50" ></textarea>
+                </td>
+                <td>
+                    <lable align="left">Where you able to find what you need</lable><br>
+                    <input type="radio" name="new viewer" value="yes">Yes <br>
+                    <input type="radio" name="new viewer" value="no">No <br>
+                    <textarea placeholder="enter where u fimd?" rows="03" cols="50" ></textarea>
+                </td>
+            </tr>
+         </table>
+         <hr>   
+         
+        <table  width="100%" align="center" border="0" cellspacing="0" cellpadding="12px" >
+            <tr>
+                <td width="50%">
+                    <lable align="left">How easy to find ur information in site?</lable><br>
+                    <input type="radio" name="mode of result" value="easy">Easy <br>
+                    <input type="radio" name="mode of result" value="average">Average <br>
+                    <input type="radio" name="mode of result" value="dificult">Dificult <br>
+                </td>
+                <td width="50%">
+                    <lable align="left">What is your rating to site out os 100?</lable><br>
+                    <input type="radio" name="rating" value="0-30">0-30 <br>
+                    <input type="radio" name="ratingt" value="31-60">31-60<br>
+                    <input type="radio" name="ratingt" value="61-100">61-100<br>
+                </td>
+            </tr>   
+        </table>
+        <hr>
+        <table  width="100%" align="center" border="0" cellspacing="0" cellpadding="12px" >
+            <tr>
+                <td>
+                    <lable>Give An Brief Feedback On site!</lable><br>
+                    <textarea placeholder="write here" rows="04" cols="70"></textarea>
+                </td>
+            </tr>        
+        </table>
+        <hr>
+        <center> <button type="submit">Submit Feedback</button></center>
+    </form>   
+</body>
+</html>

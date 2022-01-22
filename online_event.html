@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Event Registration Form</title>
+    <style>
+        .enter{
+             color: mediumblue;
+             font-size: 30px;
+        }
+        .offer{
+            color: red;
+            font-size: larger;
+        }
+        .info{
+            color: black;
+            font-size: medium;
+        }
+        button{
+            color: blanchedalmond;
+            padding: 12px;
+            background-color: blue;
+            width: 100px;
+        }
+        table{
+            background-color: lightsteelblue;
+            padding: 40px;
+            box-sizing: border-box;
+           
+
+        }
+        input{
+            padding: 5px;
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table width="400" align="center" cellspacing="0px" cellpadding="10px">
+            <tr>
+                <td>
+                    <center><strong><h3>Online Event Registration</h3></strong></center>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="enter">
+                    <strong>ENTER TO WIN!</strong>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="offer">
+                  <strong> 50%off your back-to-school shopping with<br>
+                   an exclusive coupon code.</strong>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="info">
+                    <p>Greate company is working hard to launch new site that going to revolutionize the way you do business.Leave us your informatin below and we will notify you the minute we open the doors.</p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    Registration ends at-saturday 5.30pm
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Phone Number :</strong></label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <label><strong>E-mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</strong></label>
+                   <input type="email" name="email" placeholder="ex-123@gmail.com" required><br><br>
+                   <button type="submit" value="claim">Claim</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

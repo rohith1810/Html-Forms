@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form For Sales Team</title>
+    <style>
+        .inputtx{
+            width: 300px;
+            padding: 07px;
+        }
+        strong{
+            color: blue;
+            font-size: x-large;
+        }
+        .full{
+            width: 700px;
+            padding: 07px;
+        }
+        button{
+            background-color: red;
+            color: silver;
+            padding: 12px;
+            width: 150px;
+        }
+        body{
+            background-color: black;
+        }
+        table,form{
+            background-color:white;
+            border: 2px darkgreen;
+        }
+        h5{
+           font-size:15px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table width="800" border="0" align="center" cellspacing="0" cellpadding="0"> 
+             <tr>
+                 <td >
+                     <strong>Contact Form For Sales Team :-</strong>                 
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+    
+                     <label><h5>First Name</h5></label>
+                     <input class="inputtx" type="text" name="txtuserFirstName" required>
+                 </td>
+                 <td>
+                    <label><h5>last Name</h5></label>
+                    <input  class="inputtx"  type="text" name="txtuserlastName" required>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                    <label><h5>E-mail</h5></label>
+                    <input  class="inputtx"  type="email" name="usremail" placeholder="ex-abc@gmail.com" required>
+                 </td>
+                 <td>
+                    <label><h5>Phone Number</h5></label>
+                    <input  class="inputtx"  type="number" name="usrphNum" placeholder="enter mobile number" required>
+                 </td>
+             </tr>
+        </table>
+        <table width="800" border="0" align="center" cellspacing="0" cellpadding="0"> 
+            <tr>
+                <td >
+                    <label><h5>Company Name</h5></label>
+                    <input class="full" type="text" name="companyName" placeholder="type here" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><h5>How Did You Hear About Us </h5></label>
+                <select class="inputtx" required>
+                    <option name="know_via" value="select">select</option>
+                    <option name="know_via" value="GS">Google search</option>
+                    <option name="know_via" value="FB">Facebook</option>
+                    <option name="know_via" value="WB">Watsapp</option>
+                    <option name="know_via" value="TT">Twitter</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label > <h5>Comments</h5></label>
+                    <textarea placeholder="Type Your Coments Here" rows="04" cols="100"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><br>
+                    <center><button type="submit">SUBMIT</button></center>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

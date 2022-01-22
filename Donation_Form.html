@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation_form</title>
+    <style>
+        input,textarea{
+            padding: 09px;
+            background-color: silver;
+            border-color: tomato;
+        }
+        input[type=currency]{
+            padding: 09px;
+            width: 86%;
+            background-color: silver;
+            border-color: tomato;
+
+        }
+        input[type=number]{
+            padding: 09px;
+            width: 42%;
+            background-color: silver;
+            border-color: tomato;
+        }
+        input[type=month]{
+            padding: 07px;
+            width: 42%;
+            background-color: silver;
+            border-color: tomato;
+        }
+        button{
+            background:blue;
+            padding: 12px;
+            color: silver;
+            width: 100px;
+        }
+        p{
+            font-size:40px;
+            color: blue;
+            height: 10px;
+        }
+        strong{
+            color: darkorange;
+            font-size: 25px;
+        }
+        table{
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <table width="800" align="center" cellspacing="0px" cellpadding="7px">
+            <tr>
+                <td>
+                    <p>Donation Form :-</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <label><strong> Name :</strong></label><br>
+                    <input type="text" name="FirstName" placeholder="First Name"  size="42" required>  
+                    <input type="text" name=LastName" placeholder="last Name" size="42" required>        
+                </td>
+            </tr>
+        </table>
+        <table width="800" align="center" cellspacing="5px" cellpadding="10px">
+            <tr>
+                <td>
+                    <label><strong>Phone Number :</strong></label><br>
+                    <input type="tel" name="MblNum" placeholder="10 digit mobile num" size="90" required>
+                </td>
+            </tr>
+            <tr>    
+                <td>
+                    <label><strong>E-Mail :</strong></label><br>
+                    <input type="email" name="Email" placeholder="Ex/--abc@gmail.com" size="90" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Payment Method :</strong></label><br>
+                    <input type="radio" name="Paymentvia" value="Cc" required>Credit Card <br>
+                    <input type="radio" name="Paymentvia" value="DC" required>Debit Card<br>
+                    <input type="radio" name="Paymentvia" value="mc" required>Master Card<br>
+                    <input type="radio" name="Paymentvia" value="vc" required>Visa Card<br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Card Details :</strong></label><br>
+                    <input type="number" name="cardNumber" placeholder="16Digit number on card"  required>
+                    <input type="number" name="CVV" placeholder="3 number in backside" size="43" required><br>
+                    <input type="month" name="exprymnt" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Donating Amount :</strong></label><br>
+                    <input type="currency" placeholder="Enter Amount" min="0" max="07" step="1" value="Amount" name="DonatingAmount" required="required" />
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>comments:</strong></label><br>
+                    <textarea cols="93" rows="04"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <center> <button type="submit">Donate</button></center>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

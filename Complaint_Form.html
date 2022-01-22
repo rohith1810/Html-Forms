@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student_Complaint_Form</title>
+    <style>
+        input,textarea{
+            padding: 07px;
+            background-color: silver;
+            border-color: tomato;
+        }
+        select{
+            padding: 07px;
+            width: 89%;
+            background-color: silver;
+            border-color: tomato;
+        }
+        button{
+            background:blue;
+            padding: 12px;
+            color: silver;
+            width: 100px;
+        }
+        p{
+            font-size:40px;
+            color: blue;
+            height: 10px;
+        }
+        strong{
+            color: darkorange;
+            font-size: 25px;
+        }
+        table{
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table width="800" align="center" cellspacing="0px" cellpadding="7px">
+            <tr>
+                <td>
+                    <p>Hostel Students Complaint Form</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <label><strong>Student Name :</strong></label><br>
+                    <input type="text" name="studentFirstName" placeholder="First Name"  size="42" required>  
+                    <input type="text" name="studentLastName" placeholder="last Name" size="42" required>        
+                </td>
+            </tr>
+        </table>
+        <table width="800" align="center" cellspacing="5px" cellpadding="10px">
+            <tr>
+                <td>
+                    <label><strong>Phone Number :</strong></label><br>
+                    <input type="text" name="studentMblNum" placeholder="10 digit mobile num" size="90" required>
+                </td>
+            </tr>
+            <tr>    
+                <td>
+                    <label><strong>E-Mail :</strong></label><br>
+                    <input type="email" name="StudentEmail" placeholder="Ex/--abc@gmail.com" size="90" required>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%">
+                    <label><strong>Complaint Form To :</strong></label><br>
+                    <select name="to">
+                      <option value="select">select</option>
+                      <option value="PS">Principle of School</option>
+                      <option value="cs">Chairman Of school</option>
+                      <option value="ct">Class Incharge staff</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><strong>Complaint Based On :</strong></label><br>
+                    <input type="radio" name="ReasonofLeave" value="MF" required>Mess Food<br>
+                    <input type="radio" name="ReasonofLeave" value="Water" required>Water Problem<br>
+                    <input type="radio" name="ReasonofLeave" value="RM" required>Restroom Maintance<br>
+                    <input type="radio" name="ReasonofLeave" value="wb" required>Warden Behaviour<br>
+                    <input type="radio" name="ReasonofLeave" value="others" required>other<br>
+                </td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <label><strong>Detailed Complaint:</strong></label><br>
+                    <textarea cols="93" rows="04"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <center> <button type="submit">Send</button></center>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

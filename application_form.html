@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employement Application Form</title>
+    <style>
+        table{
+             background-color: bisque;
+             margin: 2px solidgreen;
+        }  
+        button {   
+             background-color:blue;   
+             width: 600px;
+             color: white;   
+             padding: 15px;   
+             margin: 10px 0px;   
+             border: none;   
+             cursor: pointer;   
+            }
+        body{
+            background-color: lightgreen;
+        } 
+        form{
+            background-color: lightslategrey;
+        }  
+    </style>
+</head>
+<body>
+    
+    <form>
+        <center><h3>Employement Application Form</h3></center>
+            <table width="600" align="center" border="0px" cellspacing="0px" cellpadding="12px">
+                <tr>
+                    <td width="300">
+                         <label>First Name :</label><br>
+                         <input type="text" name="userFirstname" placeholder="First name" size="50" required>
+                    </td>
+                    <td>
+                         <label>Last Name :</label><br>
+                         <input type="text" name="userlastname" placeholder="last name" size="20" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>E-mail :</label><br>
+                        <input type="email" name="email" placeholder="Enter ur Email" size="50" required>
+                    </td>
+                    <td>
+                        <label>Upload your Resume  :</label><br>
+                        <input type="file" name="flupload" placeholder="Add files" size="50" required>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>
+                        <label>Position You Applying For :</label><br>
+                        <input type="text" name="Position name" size="50" required>
+                    </td>
+                    <td>
+                        <label>Salery Expectations :</label><br>
+                        <select>
+                            <option value="select">select</option>
+                            <option value="10k-15k">10k-15k</option>
+                            <option value="15k-20k">15k-20k</option>
+                            <option value="20k-25k">20k-25k</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Phone Number :</label><br>
+                        <input type="tel" name="mobile_number" size="50" min="0" max="10" required>
+                    </td>
+                    <td>
+                        <label>Are you able to relocate :</label><br>
+                        <input type="radio" name="relocate?" value="yes" required>yes &nbsp;
+                        <input type="radio" name="relocate?" value="no" required>no &nbsp;
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        <label>Ex Company Name :</label><br>
+                        <input type="text" name="ex_company_Name" placeholder="enter here" size="50" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Reference/comments/Questions</label><br>
+                        <textarea placeholder="Type here" rows="04" cols="50"></textarea>
+                    </td>
+                </tr>
+        </table>
+        <center><button type="submit">Apply Now</button></center>
+    </form>
+</body>
+</html>

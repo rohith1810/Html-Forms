@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book_ticket_form</title>
+    <style>
+        select,input,label,textarea{
+            width:99%;
+            padding: 10px;
+            font-size: medium;
+        
+
+        }
+        .container {   
+        padding: 15px;   
+        background-color:lightgreen; 
+        box-sizing: border-box; 
+        }   
+        button{
+            background:brown;
+            margin: 8px 0;
+            color: cornsilk;
+        }
+        form{
+            background-color: darkgoldenrod;
+            padding: 10px 20px;
+            margin:auto;
+            border: darkred;
+            box-sizing: border-box;
+        }
+        body{
+            align-content: center;
+            background-color: darkgoldenrod;
+            box-shadow: darkslategrey;
+            margin: 8px 0;
+            border-color: darkred;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+     <center><h1>BOOK AGENT TICKET</h1></center>
+    <center><h3>From IRCTC Authourized Agent</h3></center> 
+    <form>
+         <div class="container">
+           <lable>Reservation Quota :</lable><br>
+           <select>
+             <option>select</option>
+             <option>General</option>
+             <option>Tatkal</option>
+             <option>Premium Tatkal</option>
+           </select><br>
+           <label>Train name or number :</label><br>
+           <input type="text" name="trname(or)trnum" placeholder="train name(or)train number" required><br>
+           <lable>Journey from :</lable><br>
+           <input type="text" name="station code or station name"  placeholder="station code or station name" required><br>
+           <lable>Journey To :</lable><br>
+           <input type="text" name="station code or station name"  placeholder="station code or station name" required><br>
+           <label>Departure/Journey date</label><br>
+           <input  type="date" name="callender" required><br>
+           <label>Passenger 1 Details</label><br>
+           <label>Name of passanger 1 :</label><br>
+           <input type="text" name="txtpassenger1name" placeholder="ex:passanger 1 name as per Aadhar Card" required><br>
+           <label>Age :</label><br>
+           <input type="number" name="age of passanger 1" placeholder="ex:18" required><br>
+           <label>Sex :</label><br>
+           <select>
+               <option>Sex</option>
+               <option>Female</option>
+               <option>Male</option>
+               <option>Trangender</option>
+           </select><br>
+           <label>Mobile number</label><br>
+           <input type="number" name="mobil enumber" placeholder="10 digit mobile number " maxlength="10" required><br>
+           <label>Passenger 2 Details</label><br>
+           <label>Name of passanger 1 :</label><br>
+           <input type="text" name="txtpassenger2name" placeholder="ex:passanger 2 name as per Aadhar Card" required><br>
+           <label>Age :</label><br>
+           <input type="number" name="age of passanger 2" placeholder="ex:18" required><br>
+           <label>Sex :</label><br>
+           <select>
+               <option>Sex</option>
+               <option>Female</option>
+               <option>Male</option>
+               <option>Trangender</option>
+           </select><br>
+           <label>Passenger 3 Details</label><br>
+           <label>Name of passanger 3 :</label><br>
+           <input type="text" name="txtpassenger3name" placeholder="ex:passanger 3 name as per Aadhar Card" required><br>
+           <label>Age :</label><br>
+           <input type="number" name="age of passanger 3" placeholder="ex:18" required><br>
+           <label>Sex :</label><br>
+           <select>
+               <option>Sex</option>
+               <option>Female</option>
+               <option>Male</option>
+               <option>Trangender</option>
+           </select><br>
+           <label>Any doubts regarding booking :</label><br>
+           <textarea name="txtdouts" placeholder="type your doubts here" rows="5" cols="15"></textarea><br>
+           <center><button><h4>BOOK TICKET</h4></button> </center>
+         </div>
+    </form>
+    
+</body>
+</html>

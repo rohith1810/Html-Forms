@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel_Room_Reservation</title>
+    <style>
+        input{
+           padding: 10px;
+        }
+        button{
+            padding: 12px;
+            width: 100px;
+            color: darkblue;
+        }
+        label{
+            font-size: larger;
+            color: darkblue;
+        }
+        strong{
+            color: darkblue;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <center><strong> Hotel Room Reservation</strong></center>
+        <table width="600" align="center" cellspacing="5px" cellpadding="0px" >
+             <tr>
+                <td width="300">
+                    <label>First Name</label><br>
+                    <input type="text" name="txtuseFirstName" placeholder="First Name" size="30" required>
+                </td>
+                <td>
+                    <label>Last Name</label><br>
+                    <input type="text" name="txtuseLastName" placeholder="Last Name" size="30" required>
+                </td>
+            </tr>
+        </table>
+        <table width="600" align="center" cellspacing="5px" cellpadding="0px" >
+            <tr>
+                <td width="600">
+                    <label>Phone Number</label><br>
+                    <input type="tel" name="usrmblnum" placeholder="" size="74" required>
+                </td>
+            </tr>
+            <tr>
+                <td width="600">
+                    <label>E-mail</label><br>
+                    <input type="email" name="usrmail" placeholder="Ex/-abc12@gmail.com" size="74" required>
+                </td>
+            </tr>
+        </table>
+        <table width="600" align="center" cellspacing="5px" cellpadding="0px" >
+            <tr>
+                <td>
+                    <label>Date of Arrival</label><br>
+                    <input type="datetime-local" name="DateOfArrival" size="40" required>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label>Date of Despature</label><br>
+                    <input type="datetime-local" name="DateOfDespature" size="40" required>
+                </td>
+            </tr>
+                <td>
+                    <label>Number Of Adults</label><br>
+                    <input type="number" name="noofAdults" size="30" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Number Of Childerns</label><br>
+                    <input type="number" name="noofchildrens" size="30" required>
+                </td>
+            </tr>
+        </table>
+        <table width="600" align="center" cellspacing="5px" cellpadding="0px" >
+            <tr>
+                <td>
+                    <label>Questions/comments:-</label>
+                    <textarea name="comments" id="Questions/Comments" cols="74" rows="04"></textarea>
+                </td>
+            </tr>
+        </table>
+          <center><button type="submit">SUBMIT</button></center>
+    </form>
+    
+</body>
+</html>
